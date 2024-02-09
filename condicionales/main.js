@@ -191,11 +191,13 @@ switch (numeroDeTres){
 */
 
 //Level High
-
+//Ejercicio 1
 let nombreCliente = prompt('Ingrese su nombre')
 let pase = prompt('Pase (vip o normal)')
 let entrada = prompt('Entrada (si o no)')
 let usarEntrada
+let comprar
+let dinero
 
 if (nombreCliente == "Agustin"){
     alert('Bienvenido')
@@ -203,6 +205,22 @@ if (nombreCliente == "Agustin"){
     alert('Bienvenido')
 } else if (entrada == "si"){
     usarEntrada = confirm('Usar la entrada')
-
+    if (usarEntrada){
+        alert('Bienvenido')
+    } else {
+        alert('Adios')
+    }
+} else{
+    comprar = confirm("Quieres comprar ?")
+    if (comprar){
+        dinero = Number(prompt('Ingrese dinero'))
+        if (dinero >= 1000){
+            alert('Venta exitosa. Bienvenido.')
+        } else{
+            alert('Dinero insuficiente')
+        }
+    } else {
+        alert('Adios')
+    }
 }
 
