@@ -194,7 +194,7 @@ switch (numeroDeTres){
 //Ejercicio 1
 let nombreCliente = prompt('Ingrese su nombre')
 let pase = prompt('Pase (vip o normal)')
-let entrada = prompt('Entrada (si o no)')
+let entrada = prompt('Entrada (si o no)').toLowerCase()
 let usarEntrada
 let comprar
 let dinero
